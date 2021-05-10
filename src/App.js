@@ -10,8 +10,7 @@ import styles from './style.css';
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "react-web-tabs/dist/react-web-tabs.css";
 import React from "react";
-import ReactDOM from "react-dom";
-import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table'
+
 //Añadir los iconos
 import * as FaIcons from "react-icons/fa";
 
@@ -63,7 +62,7 @@ const App = () => {
 
       <div data-rwt-vertical="true" className="rwt_tabs vertical-tabs">
 
-    <Tabs defaultTab="vertical-tab-cGVvcGxlOjE=" vertical orientation="vertical" className="vertical-tabs"  >
+    <Tabs defaultTab="vertical-tab-cGVvcGxlOjE" vertical orientation="vertical" className="vertical-tabs"  >
       <div role="tablist" aria-orientation="vertical" className="rwt_tablist navbar-class"> 
       {data.allPeople.people.map((personaje) => <TabList>
           <Tab  tabFor={personaje.id} > <b className="personas"> {personaje.name} </b> <br/>
